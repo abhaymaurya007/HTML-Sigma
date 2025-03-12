@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form tag</title>
+  </head>
+  <body>
+    <h1>form for apply TA</h1>
+    <form action="dis" method="post">
+      <div>
+        <label for="username">USERNAME</label>
+        <input
+          type="text"
+          id="user"
+          name="username"
+          placeholder="enter user name"
+          required
+          autofocus
+          pattern="[a-zA-Z0-9]+"
+        />
+      </div>
+    <h2>Gender</h2>
+     <input type="radio" name="gender" id="gender-m" value="male" >
+      <label for="gender-m">male</label>
+      <input type="radio" name="gender" id="gender-f" value="Female" >
+      <label for="gender-f">Female</label>
+      <div>
+        <input type="checkbox" name="habit" id="play"value="yes">
+        <label for="play">Play</label>
+        <input type="checkbox" name="habit" id="Sing"value="yes">
+        <label for="Sing">Sing</label>
+        <input type="checkbox" name="habit" id="Cook"value="yes">
+        <label for="Cook">Cook</label>
+      </div>
+      <div>
+        <label for="textarea">Comment:</label><br>
+        <textarea name="textarea" id="sametextarea"rows="4"cols="50">Enter your thoughts...</textarea>
+      </div>
+    </form>
+
+  </body>
+</html>
